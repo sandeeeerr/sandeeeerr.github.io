@@ -1,6 +1,6 @@
 {
-  "short_name": "Ottiya PWA",
-  "name": "Ottiya PWA test",
+  "short_name": "Ottiya",
+  "name": "Ottiya",
   "icons": [
     {
       "src": "favicon.ico",
@@ -16,5 +16,5 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#fbe191",
-  "background_color": "#221f1f"
+  "background_color": "#fbe191"
 }
