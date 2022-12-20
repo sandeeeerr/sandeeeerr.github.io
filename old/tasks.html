@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Ottiya | Taken</title>
+
+  <!-- Basic style Ottiya (this has to be included on all pages!) -->
+  <link rel="stylesheet" href="src/css/style.css">
+
+  <!-- Basic scripts (this has to be included on all pages!) -->
+  <script src="https://kit.fontawesome.com/75b01ed993.js" crossorigin="anonymous"></script>
+  <script src="src/lib/jquery-3.6.1.min.js"></script>
+
+  <!-- json met letter data -->
+  <script type="text/javascript" src="src/js/letters.js"></script>
+  <!-- json met item data -->
+  <script type="text/javascript" src="src/js/items.js"></script>
+
+
+</head>
+
+<body class="logoBG">
+  <!-- <a class="topbut settings" href="settings.html"></a> -->
+  <div class="topButtonContainer">
+    <a class="topbut shop" href="shop.html"></a>
+  </div>
+
+  <div class="taskProgressContainer">
+    <div class="bg2">
+    <div class="bg1">
+      <div class="coliContainer">
+        <div class="xpBox">
+            <i class="fa-solid fa-trophy"></i>
+            60/<span id="xpVal">0</span>
+        </div>
+        <div class="coliTaskOuter">
+        <div id="coliAppend" class="coliTaskInner">
+          <img class="coli_base" src="src/img/coli/coli_base.png" alt="">
+        </div>
+        </div>
+        <svg class="circle-container" viewBox="2 -2 28 36" xmlns="http://www.w3.org/2000/svg">
+          <circle class="circle-container__background" r="16" cx="16" cy="16" shape-rendering="geometricPrecision"></circle>
+          <circle class="circle-container__progress" r="16" cx="16" cy="16" style="stroke-dashoffset: 37.5" shape-rendering="geometricPrecision">
+          </circle>
+        </svg>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="growthContainer">
+    <div class="growthBox" id="level">
+      <i id="levelVal"></i>
+      <span id="levelValTxt">4</span>
+    </div>
+    <div class="growthBox" id="coins">
+      <i class="fa-solid fa-coins"></i>
+      <span id="coinsVal">10</span>
+    </div>
+  </div>
+
+  <div class="halfWhiteBG"></div>
+
+  <div class="taskListContainer">
+    <div id="buttonLine"></div>
+    <h2 class="taskListContainerTitle">challenges 📝🖍️</h1>
+    <div id="taskList">
+      <!-- <button onclick="localStorage.clear(), location.reload()">reset</button>
+      <button onclick="add_xp(10), location.reload()">+10xp</button>
+      <button onclick="add_xp(5), location.reload()">+5xp</button>
+      <button onclick="add_coins(5), location.reload()">+5coins</button> -->
+    </div>
+  </div>
+
+  <!-- funtions script -->
+  <script type="text/javascript" src="src/js/functions.js"></script>
+  <!-- tasks script -->
+  <script type="text/javascript" src="src/js/tasks.js"></script>
+</body>
+
+</html>

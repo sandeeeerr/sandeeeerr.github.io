@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Ottiya | Let's write</title>
+
+  <!-- Basic style Ottiya (this has to be included on all pages!) -->
+  <link rel="stylesheet" href="src/css/style.css">
+
+  <!-- Basic scripts (this has to be included on all pages!) -->
+  <script src="https://kit.fontawesome.com/75b01ed993.js" crossorigin="anonymous"></script>
+  <script src="src/lib/jquery-3.6.1.min.js"></script>
+
+  <!-- json met letter data -->
+  <script type="text/javascript" src="src/js/letters.js"></script>
+</head>
+
+<body class="draw">
+  <div class="container">
+    <header>
+      <nav>
+        <a class="back" href="tasks.html"></a>
+        <h1 id="drawIcon">✍️🖍️</h1>
+      </nav>
+      <div class="titles">
+        <h1 id="drawTitle">
+          Let’s write!
+        </h1>
+        <p id="drawUnderTitle">
+          Try to write <b id='titleLetter'>ㅅ</b>, <br>which sounds like <b id='titlePronunciation'>(si-ot)</b>
+        </p>
+      </div>
+    </header>
+
+    <div class="progress">
+      <p class="pregressText"><span id="barText">0</span>/5</p>
+      <div class="progressBar">
+        <div id="bar" class="inner"></div>
+      </div>
+    </div>
+
+
+    <audio id="audio" src="test.mp3"></audio>
+
+    <div class="drawBox">
+      <a class="sound" href="#" onclick="play()"></a>
+      <div class="status" id="right"> ✅ </div>
+      <div class="status" id="wrong"> ❌ </div>
+      <canvas width="400" height="400" id="canvas"></canvas>
+    </div>
+
+    <!-- <button onclick="localStorage.setItem(urlLetter, 0); location.reload();">reset</button> -->
+    <a class="help" id="coliHelp" href="#">
+      <img src="src/img/coli_help.png" alt="">
+    </a>
+
+    <img class="background" src="src/img/bg.png" alt="">
+
+    <!-- funtions script -->
+    <script type="text/javascript" src="src/js/functions.js"></script>
+    <!-- tasks script -->
+    <script type="text/javascript" src="src/js/drawing.js"></script>
+  </div>
+</body>
+
+</html>
